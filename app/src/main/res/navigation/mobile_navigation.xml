@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.navegacion.ui.home.HomeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_calculadora"
+        android:name="com.example.navegacion.Calculadora"
+        android:label="@string/menu_calculadora"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_musica"
+        android:name="com.example.navegacion.Musica"
+        android:label="@string/menu_musica"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_navegador"
+        android:name="com.example.navegacion.Navegador"
+        android:label="Navegador"
+        tools:layout="@layout/fragment_navegador" />
+    <fragment
+        android:id="@+id/nav_app"
+        android:name="com.example.navegacion.App"
+        android:label="Apps"
+        tools:layout="@layout/fragment_app" />
+    <fragment
+        android:id="@+id/nav_maravillas"
+        android:name="com.example.navegacion.Maravillas"
+        android:label="Maravillas"
+        tools:layout="@layout/fragment_maravillas" >
+        <action
+            android:id="@+id/action_nav_maravillas_to_maravillaActivity"
+            app:destination="@id/maravillaActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_extra"
+        android:name="com.example.navegacion.Extra"
+        android:label="Extra"
+        tools:layout="@layout/fragment_extra" >
+        <action
+            android:id="@+id/action_nav_extra_to_QR"
+            app:destination="@id/QR"
+            app:launchSingleTop="true" />
+    </fragment>
+    <activity
+        android:id="@+id/QR"
+        android:name="com.example.navegacion.QR"
+        android:label="QR" />
+    <activity
+        android:id="@+id/maravillaActivity"
+        android:name="com.example.navegacion.MaravillaActivity"
+        android:label="activity_video"
+        tools:layout="@layout/activity_video" />
+</navigation>

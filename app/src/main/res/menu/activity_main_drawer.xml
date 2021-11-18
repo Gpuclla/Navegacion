@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menu"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_calculadora"
+            android:icon="@drawable/calculadora"
+            android:title="@string/menu_calculadora" />
+        <item
+            android:id="@+id/nav_musica"
+            android:icon="@drawable/musica"
+            android:title="@string/menu_musica" />
+        <item
+            android:id="@+id/nav_navegador"
+            android:icon="@drawable/internet"
+            android:title="@string/menu_navegador" />
+        <item
+            android:id="@+id/nav_app"
+            android:icon="@drawable/app"
+            android:title="@string/menu_apps" />
+        <item
+            android:id="@+id/nav_maravillas"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_maravillas" />
+        <item
+            android:id="@+id/nav_extra"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_extra" />
+    </group>
+</menu>
